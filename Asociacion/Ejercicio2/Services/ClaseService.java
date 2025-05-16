@@ -1,6 +1,5 @@
 package Ejercicio2.Services;
 import Ejercicio2.Entidad.*;
-import java.util.Arrays;
 
 public class ClaseService {
     EstudianteService estudianteService = new EstudianteService();
@@ -23,7 +22,8 @@ public class ClaseService {
         }
     }
     public void listarEstudiante (Clase clase) {
-        for (int i = 0; i < clase.getnumeroEstudiantes; i++) {
+        for (int i = 0; i < clase.getNumeroEstudiantes(); i++) {
+            System.out.println("Estudiante " + (i+1) + clase.getEstudiantes()[i]);
             
         }
     }
